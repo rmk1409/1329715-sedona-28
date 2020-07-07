@@ -9,34 +9,32 @@
   <nav>
     <ul>
       <li>
-        <a href="#">Информация</a>
+        <a href="#" aria-label="Ссылка на страницу Информации">Информация</a>
       </li>
       <li>
-        <a href="#">Фото и видео</a>
+        <a href="#" aria-label="Ссылка на страницу Фото и Видео">Фото и видео</a>
       </li>
     </ul>
-    <a>
-      <img src="img/logo.png" alt="Логотип" width="138" height="70">
-    </a>
+    <img src="img/logo.png" alt="Логотип" width="138" height="70">
     <ul>
       <li>
-        <a href="#">Карта штата</a>
+        <a href="#" aria-label="Ссылка на страницу Карты сайта">Карта штата</a>
       </li>
       <li>
-        <a href="catalog.html">Гостиницы</a>
+        <a href="catalog.html" aria-label="Ссылка на страницу Гостиницы">Гостиницы</a>
       </li>
     </ul>
   </nav>
 </header>
 <main>
-  <h1>Описание Седоны</h1>
+  <h1 class="visually-hidden">Описание Седоны</h1>
   <section>
     <img src="img/welcome.png" alt="Добро пожаловать в Седону" width="456" height="351">
     <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
     <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
   </section>
   <section>
-    <h2>Причина №1</h2>
+    <h2 class="visually-hidden">Причина №1</h2>
     <div>
       <h3>Настоящий городок</h3>
       <p>- №1 -</p>
@@ -45,7 +43,7 @@
     <img src="img/reason-1.jpg" alt="Настоящий городок" width="800" height="256">
   </section>
   <section>
-    <h2>Опции</h2>
+    <h2 class="visually-hidden">Опции</h2>
     <article>
       <h3>Жильё</h3>
       <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -60,7 +58,7 @@
     </article>
   </section>
   <section>
-    <h2>Причина №2</h2>
+    <h2 class="visually-hidden">Причина №2</h2>
     <img src="img/reason-2.jpg" alt="Мост дьявола" width="800" height="256">
     <div>
       <h3>Там есть мост дьявола</h3>
@@ -69,7 +67,7 @@
     </div>
   </section>
   <section>
-    <h2>Остальные причины</h2>
+    <h2 class="visually-hidden">Остальные причины</h2>
     <article>
       <h3>Небольшая площадь</h3>
       <p>- №3 -</p>
@@ -98,49 +96,59 @@
 </main>
 <footer>
   <section>
-    <h2>Контактная информация. Тег и телефон</h2>
+    <h2 class="visually-hidden">Контактная информация. Тег и телефон</h2>
     <p>#visitsedona</p>
     <p>
       Тел: <a href="tel:+74956660166" aria-label="Контактный номер телефона">+7(495)666-01-66</a>
     </p>
   </section>
   <section>
-    <h2>Социальные сети</h2>
+    <h2 class="visually-hidden">Социальные сети</h2>
     <ul>
       <li>
-        <a href="#">
+        <a href="#" aria-label="Twitter">
           <img src="img/social-twitter-icon.svg" alt="Твиттер" width="17" height="17">
-          Twitter
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#" aria-label="Facebook">
           <img src="img/social-fb-icon.svg" alt="Фейсбук" width="12" height="22">
-          Facebook
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#" aria-label="Youtube">
           <img src="img/social-youtube-icon.svg" alt="Ютуб" width="20" height="16">
-          Youtube
         </a>
       </li>
     </ul>
   </section>
   <section>
-    <h2>Кем создано</h2>
+    <h2 class="visually-hidden">Кем создано</h2>
     <p>
       Website by
-      <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Html academy">
+      <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на курс">
         <img src="img/logo-htmlacademy.png" alt="Html academy" width="115" height="41">
       </a>
     </p>
   </section>
 </footer>
 <section>
-  <h2>Форма поиска гостиницы</h2>
-  <!--    Здесь будет форма-->
-  <button type="submit">Найти</button>
+  <h2 class="visually-hidden">Форма поиска гостиницы</h2>
+  <form method="get" action="#">
+    <label>
+      Дата заезда:<input type="text" placeholder="24 апреля 2017">
+    </label>
+    <label>
+      Дата выезда:<input type="text" placeholder="4 июля 2017">
+    </label>
+    <label>
+      Взрослые:<input type="text" placeholder="2">
+    </label>
+    <label>
+      Дети:<input type="text" placeholder="0">
+    </label>
+    <button type="submit" title="Найти">Найти</button>
+  </form>
 </section>
 </body>
 </html>
