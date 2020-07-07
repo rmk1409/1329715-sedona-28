@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [R P](https://up.htmlacademy.ru/htmlcss/28/user/1329715).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
 ---
 
