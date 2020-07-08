@@ -28,6 +28,9 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 img {
@@ -44,6 +47,16 @@ a {
 .container {
   margin: 0 auto;
   width: 1200px;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+.page {
+  height: 100%;
+  background-color: var(--basic-grey);
+}
+
+.main-body {
+  background-color: var(--basic-white);
 }
 
 .visually-hidden {
@@ -65,17 +78,65 @@ a {
 
 .main-body * {
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .sedona-intro h2 {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  margin-top: 40px;
 }
 
-.sedona-intro {
+.sedona-intro p {
+  margin-top: 40px;
+}
+
+.go-to-us-section,
+.sedona-intro,
+.contact-section,
+.option-section,
+.other-reasons,
+.reason-section-text-div {
+  text-align: center;
+}
+
+.sort-section h2 {
+  width: 135px;
+}
+
+.sort-section h3 {
+  margin-left: 40px;
+}
+
+.sort-links {
+  margin-left: 40px;
+}
+
+.sort-links li {
+  margin-right: 32px;
+}
+
+.fieldset-infrastructure,
+.fieldset-flat-type {
+  width: 180px;
+}
+
+.div-for-fielset-price-and-button {
+  width: 320px;
+  margin-left: auto;
+}
+
+.sedona-slide {
+  background-color: var(--basic-brown);
   background-image: url("../img/main-background.jpg");
   background-repeat: no-repeat;
+  width: 1200px;
+  height: 510px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .filter-section {
@@ -84,7 +145,7 @@ a {
   background-repeat: no-repeat;
 }
 
-.show-button {
+.filter-section .show-button {
   background-color: transparent;
   border: 2px solid var(--basic-white);
 }
@@ -145,6 +206,12 @@ a {
   line-height: 21px;
 }
 
+.option-section,
+.other-reasons {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+}
+
 .search-form label,
 .search-form input,
 .found-section a {
@@ -170,6 +237,35 @@ a {
 .search-form {
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   background-color: var(--basic-white);
+  display: none;
+  position: fixed;
+  left: 50%;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.reason-section-text-div {
+  width: 400px;
+}
+
+.reason-section-text-div p,
+.option-section p,
+.other-reasons p {
+  margin-top: 24px;
+}
+
+.go-to-us-section {
+  width: 568px;
+  margin: 0 auto;
+}
+
+.go-to-us-section p {
+  margin-top: 34px;
+}
+
+.open-search-form-button {
+  margin-top: 50px;
 }
 
 .open-search-form-button,
@@ -257,6 +353,81 @@ a {
   background-color: var(--basic-white);
 }
 
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 520px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.author-section {
+  display: flex;
+  align-items: center;
+  width: 210px;
+  justify-content: space-between;
+}
+
+.filter-form {
+  display: flex;
+}
+
+.sort-section {
+  display: flex;
+}
+
+.sort-links {
+  display: flex;
+  justify-content: space-between;
+  width: 780px;
+}
+
+.sort-section__words {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+.main-body .sort-section__arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+}
+
+.hotel-description {
+  width: 260px;
+}
+
+.hotel-rating {
+  width: 180px;
+  margin-left: auto;
+}
+
+.found-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.found-section article {
+  display: flex;
+}
+
 .main-nav a:hover {
   color: var(--basic-blue);
 }
@@ -273,6 +444,13 @@ a {
 .button {
   color: var(--basic-white);
   border: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.contact-section {
+  width: 250px;
 }
 
 .book-button,
