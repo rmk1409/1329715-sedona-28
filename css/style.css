@@ -82,15 +82,19 @@ a {
   padding: 0;
 }
 
+.sedona-intro {
+  padding-bottom: 51px;
+}
+
 .sedona-intro h2 {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  margin-top: 40px;
+  margin-top: 42px;
 }
 
 .sedona-intro p {
-  margin-top: 40px;
+  margin-top: 44px;
 }
 
 .go-to-us-section,
@@ -128,7 +132,7 @@ a {
   margin-left: auto;
 }
 
-.sedona-slide {
+.sedona-intro__slide {
   background-color: var(--basic-brown);
   background-image: url("../img/main-background.jpg");
   background-repeat: no-repeat;
@@ -137,6 +141,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.senoda-intro__text {
+  width: 550px;
+  margin: 0 auto;
 }
 
 .filter-section {
@@ -166,6 +175,7 @@ a {
 .reason-section-1 {
   background-image: url("../img/reason-1.jpg");
   background-repeat: no-repeat;
+  background-position-x: 400px;
 }
 
 .other-reasons {
@@ -246,7 +256,58 @@ a {
 }
 
 .reason-section-text-div {
-  width: 400px;
+  width: 396px;
+  padding: 47px 50px 56px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.reason-section-2 {
+  line-height: 0;
+}
+
+.reason-section h3,
+.other-reasons h3 {
+  width: 173px;
+  margin: 0 auto;
+}
+
+.other-reasons h3 {
+  width: 180px;
+}
+
+.option-section article {
+  padding: 160px 50px 82px;
+  position: relative;
+}
+
+.option-section article::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-home.svg");
+  width: 75px;
+  height: 72px;
+  top: 60px;
+  left: 162px;
+}
+
+.option-section article:nth-child(3)::before {
+  background-image: url("../img/icon-food.svg");
+  width: 75px;
+  height: 70px;
+  top: 61px;
+}
+
+.option-section article:nth-child(4)::before {
+  background-image: url("../img/icon-gift.svg");
+  width: 64px;
+  height: 77px;
+  top: 55px;
+  left: 168px;
+}
+
+.other-reasons article {
+  padding: 48px 71px 54px;
 }
 
 .reason-section-text-div p,
@@ -258,14 +319,25 @@ a {
 .go-to-us-section {
   width: 568px;
   margin: 0 auto;
+  padding-top: 58px;
+}
+
+.go-to-us-section h2 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
 }
 
 .go-to-us-section p {
   margin-top: 34px;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .open-search-form-button {
   margin-top: 50px;
+  padding: 30px 117px;
 }
 
 .open-search-form-button,
@@ -356,13 +428,34 @@ a {
 .main-nav {
   display: flex;
   justify-content: space-around;
+  margin-bottom: -15px;
+  padding: 0 5px;
+}
+
+.logo {
+  z-index: 1;
+}
+
+.main-nav a {
+  display: block;
+  padding: 14px 67px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.sedona-intro__slide img {
+  margin-top: -5px;
 }
 
 .main-nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  width: 520px;
+  width: 530px;
+}
+
+.main-nav ul:last-child {
+  justify-content: flex-end;
 }
 
 .main-footer {

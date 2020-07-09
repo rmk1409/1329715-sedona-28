@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Седона - Главная</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,10 +18,10 @@
         <a href="#" aria-label="Ссылка на страницу Фото и Видео">Фото и видео</a>
       </li>
     </ul>
-    <img src="img/logo.png" alt="Логотип" width="138" height="70">
+    <img src="img/logo.png" alt="Логотип" width="138" height="70" class="logo">
     <ul>
       <li>
-        <a href="#" aria-label="Ссылка на страницу Карты сайта">Карта штата</a>
+        <a href="#" aria-label="Ссылка на страницу Карты сайта" class="map-link">Карта штата</a>
       </li>
       <li>
         <a href="catalog.html" aria-label="Ссылка на страницу Гостиницы">Гостиницы</a>
@@ -31,11 +32,13 @@
 <main>
   <h1 class="visually-hidden">Описание Седоны</h1>
   <section class="sedona-intro">
-    <div class="sedona-slide">
+    <div class="sedona-intro__slide">
       <img src="img/welcome.png" alt="Добро пожаловать в Седону" width="458" height="352">
     </div>
-    <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-    <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    <div class="senoda-intro__text">
+      <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    </div>
   </section>
   <section class="reason-section reason-section-1">
     <h2 class="visually-hidden">Причина №1</h2>
@@ -60,7 +63,7 @@
       <p>Не только китайского, но и местного производства!</p>
     </article>
   </section>
-  <section class="reason-section">
+  <section class="reason-section reason-section-2">
     <h2 class="visually-hidden">Причина №2</h2>
     <img src="img/reason-2.jpg" alt="Мост дьявола" width="800" height="256">
     <div class="reason-section-text-div">
