@@ -18,12 +18,12 @@
         <a href="#" aria-label="Ссылка на страницу Фото и Видео">Фото и видео</a>
       </li>
     </ul>
-    <a href="index.html" aria-label="Ссылка на главную страницу" class="logo>
-      <img src=" img/logo.png" alt="Логотип" width="138" height="70">
+    <a href="index.html" aria-label="Ссылка на главную страницу" class="logo">
+      <img src="img/logo.png" alt="Логотип" width="138" height="70">
     </a>
     <ul>
       <li>
-        <a href="#" aria-label="Ссылка на страницу Карту Штата">Карта штата</a>
+        <a href="#" aria-label="Ссылка на страницу Карту Штата" class="map-link">Карта штата</a>
       </li>
       <li>
         <a class="current-link" aria-label="Ссылка на страницу Гостиницы">Гостиницы</a>
@@ -36,39 +36,60 @@
     <h2 class="visually-hidden">Фильтр</h2>
     <form method="get" action="#" class="filter-form">
       <fieldset class="fieldset-infrastructure">
-        <legend>Инфраструктура</legend>
-        <label>
-          <input type="checkbox" name="swimming-pool" checked>
+        <legend>Инфраструктура:</legend>
+        <label class="check">
+          <input class="check__input" type="checkbox" name="swimming-pool" checked>
+          <span class="check__box"></span>
           Бассейн
         </label>
-        <label>
-          <input type="checkbox" name="parking">
+        <label class="check">
+          <input class="check__input" type="checkbox" name="parking">
+          <span class="check__box"></span>
           Парковка
         </label>
-        <label>
-          <input type="checkbox" name="wi-fi">
+        <label class="check">
+          <input class="check__input" type="checkbox" name="wi-fi">
+          <span class="check__box"></span>
           Wi-Fi
         </label>
       </fieldset>
       <fieldset class="fieldset-flat-type">
         <legend>Тип жилья:</legend>
-        <label>
-          <input type="checkbox" name="hostel" checked>
+        <label class="check">
+          <input class="check__input" type="checkbox" name="hostel" checked>
+          <span class="check__box"></span>
           Гостиница
         </label>
-        <label>
-          <input type="checkbox" name="motel" checked>
+        <label class="check">
+          <input class="check__input" type="checkbox" name="motel" checked>
+          <span class="check__box"></span>
           Мотель
         </label>
-        <label>
-          <input type="checkbox" name="flat" checked>
+        <label class="check">
+          <input class="check__input" type="checkbox" name="flat" checked>
+          <span class="check__box"></span>
           Апартаменты
         </label>
       </fieldset>
       <div class="div-for-fielset-price-and-button">
-        <fieldset>
+        <fieldset class="fieldset-price">
           <legend>Стоимость в сутки (р):</legend>
           <!--TODO Here will be a range filter-->
+          <div class="number-range">
+            <label>
+              от <input type="number" name="min-price" value="0">
+            </label>
+            <label>
+              до <input type="number" name="max-price" value="3000">
+            </label>
+          </div>
+          <div class="ranger">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min" tabindex="0"></div>
+            <div class="toggle toggle-max" tabindex="0"></div>
+          </div>
         </fieldset>
         <button type="submit" title="Показать по фильтру" class="button show-button">Показать</button>
       </div>
@@ -78,7 +99,7 @@
     <h2>
       Найдено: 3
     </h2>
-    <h3>Сортивка:</h3>
+    <h3>Сортировка:</h3>
     <div class="sort-links">
       <ul class="sort-section__words">
         <li>
@@ -124,10 +145,8 @@
         <a href="#" aria-label="Ссылка забранировать объект" class="button book-button">Забронировать</a>
       </div>
       <div class="hotel-rating">
-        <div>
-          <img src="img/rating-4-stars.png" alt="Рейтинг" width="91" height="17">
-          <p>Рейтинг: 8,5</p>
-        </div>
+        <img src="img/rating-4-stars.png" alt="Рейтинг" width="91" height="17">
+        <p>Рейтинг: 8,5</p>
       </div>
     </article>
     <article>
@@ -142,10 +161,8 @@
         <a href="#" aria-label="Ссылка забранировать объект" class="button book-button">Забронировать</a>
       </div>
       <div class="hotel-rating">
-        <div>
-          <img src="img/rating-3-stars.png" alt="Рейтинг" width="66" height="17">
-          <p>Рейтинг: 8,9</p>
-        </div>
+        <img src="img/rating-3-stars.png" alt="Рейтинг" width="66" height="17">
+        <p>Рейтинг: 8,9</p>
       </div>
     </article>
     <article>
@@ -160,20 +177,18 @@
         <a href="#" aria-label="Ссылка забранировать объект" class="button book-button">Забронировать</a>
       </div>
       <div class="hotel-rating">
-        <div>
-          <img src="img/rating-2-stars.png" alt="Рейтинг" width="42" height="17">
-          <p>Рейтинг: 9,2</p>
-        </div>
+        <img src="img/rating-2-stars.png" alt="Рейтинг" width="42" height="17">
+        <p>Рейтинг: 9,2</p>
       </div>
     </article>
   </section>
 </main>
-<footer class="main-footer">
+<footer class="main-footer main-footer_hotels">
   <section class="contact-section">
     <h2 class="visually-hidden">Контактная информация. Тег и телефон</h2>
     <p>#visitsedona</p>
     <p>
-      Тел: <a href="tel:+74956660166" aria-label="Контактный номер телефона">+7(495)666-01-66</a>
+      Тел: <a href="tel:+74956660166" aria-label="Контактный номер телефона">+7(495) 666-01-66</a>
     </p>
   </section>
   <section class="social-section">
