@@ -29,10 +29,6 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  display: grid;
-  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
 }
 
 img {
@@ -50,6 +46,10 @@ a {
   margin: 0 auto;
   width: 1200px;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .page {
@@ -200,7 +200,7 @@ a {
   opacity: 0.3;
 }
 
-.div-for-fielset-price-and-button {
+.div-for-fieldset-price-and-button {
   width: 320px;
   margin-left: auto;
 }
@@ -254,7 +254,7 @@ input[type=number] {
 }
 
 .sedona-intro__slide {
-  background-color: var(--basic-brown);
+  background-color: var(--basic-blue);
   background-image: url("../img/main-background.jpg");
   background-repeat: no-repeat;
   width: 1200px;
@@ -272,7 +272,7 @@ input[type=number] {
 .filter-section {
   color: var(--basic-white);
   background-image: url("../img/background-blur.jpg");
-  background-color: var(--basic-brown);
+  background-color: var(--basic-blue);
   background-repeat: no-repeat;
   padding: 26px 70px 31px 72px;
 }
@@ -320,6 +320,12 @@ input[type=number] {
   left: 0;
 }
 
+.toggle:hover {
+  width: 5px;
+  height: 5px;
+  border-width: 9px;
+}
+
 .toggle-max {
   left: 253px;
 }
@@ -347,7 +353,7 @@ input[type=number] {
 
 .reason-section-1 {
   background-image: url("../img/reason-1.jpg");
-  background-color: var(--basic-brown);
+  background-color: var(--basic-blue);
   background-repeat: no-repeat;
   background-position-x: 400px;
 }
@@ -404,8 +410,8 @@ input[type=number] {
 
 .search-form input {
   background-color: var(--basic-grey);
-  border: none;
-  padding: 6px 35px 6px 13px;
+  border: 2px solid transparent;
+  padding: 3px 35px 5px 11px;
 }
 
 .search-form input:hover {
@@ -417,8 +423,6 @@ input[type=number] {
   background-color: var(--basic-white);
   border: 2px solid var(--grey-active);
   outline: none;
-  padding-top: 4px;
-  padding-bottom: 4px;
 }
 
 .div-for-search-form {
@@ -890,7 +894,7 @@ input[type=number] {
   color: var(--basic-blue);
 }
 
-.main-nav a:active {
+.main-nav a:active:not(.logo) {
   color: var(--basic-black);
   opacity: 0.3;
 }
