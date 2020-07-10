@@ -264,8 +264,8 @@ input[type=number] {
 .filter-section {
   color: var(--basic-white);
   background-image: url("../img/background-blur.jpg");
+  background-color: var(--basic-brown);
   background-repeat: no-repeat;
-  min-height: 217px;
   padding: 26px 70px 31px 72px;
 }
 
@@ -331,6 +331,7 @@ input[type=number] {
 
 .reason-section-1 {
   background-image: url("../img/reason-1.jpg");
+  background-color: var(--basic-brown);
   background-repeat: no-repeat;
   background-position-x: 400px;
 }
@@ -417,6 +418,7 @@ input[type=number] {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 5;
 }
 
 .search-form p {
@@ -430,15 +432,22 @@ input[type=number] {
   align-items: center;
 }
 
-.search-form label {
+.search-form p,
+.search-form span {
   position: relative;
 }
 
-.two-labels-paragraph label {
+.search-form span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.children-span-count label {
   min-width: 180px;
 }
 
-.two-labels-paragraph label:first-child {
+.adult-span-count label {
   min-width: 226px;
 }
 
@@ -457,14 +466,16 @@ input[type=number] {
 }
 
 .reason-section-text-div {
-  width: 396px;
-  padding: 46px 41px 54px 46px;
+  width: 400px;
+  padding: 46px 41px 54px 43px;
   display: inline-block;
   vertical-align: top;
+  background-color: var(--basic-blue);
 }
 
 .reason-section-2 .reason-section-text-div {
   padding: 49px 41px 51px 39px;
+  width: 396px;
 }
 
 .reason-section-2 {
@@ -703,10 +714,30 @@ input[type=number] {
   background-color: var(--basic-white);
   padding: 23px 138px 34px 111px;
   width: 1200px;
+  opacity: 0.9;
+  min-height: 120px;
+  z-index: 4;
 }
 
 .main-footer_hotels {
   margin-top: 0;
+  opacity: 1;
+}
+
+.map-section {
+  position: relative;
+}
+
+.map-section iframe {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+
+.map-section p {
+  position: absolute;
+  z-index: 2;
+  top: 0;
 }
 
 .social-section {
@@ -717,8 +748,11 @@ input[type=number] {
 .social-section ul {
   display: flex;
   flex-wrap: wrap;
-  width: 150px;
-  justify-content: space-between;
+  width: 170px;
+}
+
+.social-section li {
+  margin-right: 6px;
 }
 
 .social-section a {
