@@ -54,11 +54,10 @@ a {
 
 .page {
   height: 100%;
-  background-color: var(--basic-grey);
 }
 
 .main-body {
-  background-color: var(--basic-white);
+  background-color: var(--basic-grey);
 }
 
 .visually-hidden {
@@ -78,7 +77,15 @@ a {
   margin: 0;
 }
 
-.main-body * {
+.main-header,
+.main,
+.main-footer {
+  background-color: var(--basic-white);
+}
+
+.main-header *,
+.main *,
+.main-footer * {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
