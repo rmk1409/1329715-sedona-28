@@ -30,6 +30,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
@@ -314,6 +315,14 @@ input[type=number] {
 
 .toggle-max {
   left: 253px;
+}
+
+.search-form ::-webkit-input-placeholder {
+  color: var(--basic-black);
+}
+
+.search-form ::-moz-placeholder {
+  color: var(--basic-black);
 }
 
 .search-form ::placeholder {
@@ -713,7 +722,6 @@ input[type=number] {
   margin-top: -126px;
   background-color: var(--basic-white);
   padding: 23px 138px 34px 111px;
-  width: 1200px;
   opacity: 0.9;
   min-height: 120px;
   z-index: 4;
@@ -956,6 +964,91 @@ input[type=number] {
 
 .link-to-course:active svg {
   fill: var(--grey4);
+}
+
+@-webkit-keyframes show {
+  0% {
+    padding: 0;
+  }
+  10% {
+    height: 10%;
+  }
+  50% {
+    height: 50%;
+  }
+  90% {
+    height: 90%;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  100% {
+    padding: 24px 55px 55px;
+    height: 100%;
+  }
+}
+
+@keyframes show {
+  0% {
+    padding: 0;
+  }
+  10% {
+    height: 10%;
+  }
+  50% {
+    height: 50%;
+  }
+  90% {
+    height: 90%;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  100% {
+    padding: 24px 55px 55px;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes error {
+  0% {
+    box-shadow: none;
+    transform: translateX(-51%);
+  }
+  100% {
+    box-shadow: 0 0 40px 10px rgba(255, 0, 0, 0.6);
+    transform: translateX(-49%);
+  }
+}
+
+@keyframes error {
+  0% {
+    box-shadow: none;
+    transform: translateX(-51%);
+  }
+  100% {
+    box-shadow: 0 0 40px 10px rgba(255, 0, 0, 0.6);
+    transform: translateX(-49%);
+  }
+}
+
+.modal {
+  display: none;
+}
+
+.modal-show {
+  display: block;
+  -webkit-animation-name: show;
+  animation-name: show;
+  -webkit-animation-duration: 1.0s;
+  animation-duration: 1.0s;
+}
+
+.modal-error {
+  -webkit-animation-name: error;
+  animation-name: error;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5;
 }
 
 *, *::before, *::after {
