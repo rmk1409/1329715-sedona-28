@@ -263,7 +263,7 @@ input[type=number] {
   align-items: center;
 }
 
-.senoda-intro__text {
+.sedona-intro__text {
   width: 550px;
   margin: 0 auto;
 }
@@ -470,6 +470,10 @@ input[type=number] {
 .short-input,
 .sign-button {
   width: 38px;
+}
+
+.sign-button {
+  background-color: var(--basic-grey);
 }
 
 .two-labels-div input {
@@ -685,25 +689,15 @@ input[type=number] {
 }
 
 .main-nav {
-  margin-bottom: -21px;
-  padding-left: 73px;
-  padding-right: 71px;
-}
-
-.main-nav_catalog {
-  margin-bottom: -23px;
+  padding: 14px 71px 15px 73px;
 }
 
 .main-nav li {
   width: 228px;
-  padding-top: 14px;
 }
 
 .main-nav li:nth-child(3) {
-  width: 138px;
-  margin-left: 2px;
-  margin-right: 4px;
-  padding-top: 0;
+  margin-left: 144px;
 }
 
 .main-nav__left-link {
@@ -715,8 +709,11 @@ input[type=number] {
 }
 
 .main-nav .logo {
-  position: relative;
+  position: absolute;
   z-index: 1;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .main-nav a {
@@ -972,6 +969,17 @@ input[type=number] {
   fill: var(--grey4);
 }
 
+@-webkit-keyframes show {
+  0% {
+    transform: translate(-50%, -86px);
+    padding: 0 55px;
+  }
+  100% {
+    transform: translate(-50%, 0);
+    padding: 24px 55px 55px;
+  }
+}
+
 @keyframes show {
   0% {
     transform: translate(-50%, -86px);
@@ -980,6 +988,24 @@ input[type=number] {
   100% {
     transform: translate(-50%, 0);
     padding: 24px 55px 55px;
+  }
+}
+
+@-webkit-keyframes error {
+  10%, 90% {
+    transform: translateX(-48%);
+  }
+
+  20%, 80% {
+    transform: translateX(-52%);
+  }
+
+  30%, 50%, 70% {
+    transform: translateX(-49%);
+  }
+
+  40%, 60% {
+    transform: translateX(-51%);
   }
 }
 
