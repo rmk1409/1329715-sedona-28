@@ -433,48 +433,56 @@ input[type=number] {
   z-index: 5;
 }
 
-.search-form p {
+.search-form p,
+.two-labels-div {
   margin-top: 30px;
 }
 
 .search-form label,
-.two-labels-paragraph {
+.two-labels-div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.search-form p,
-.search-form span {
+.search-form p {
   position: relative;
 }
 
-.search-form span {
+.children-div-count,
+.adult-div-count {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.children-span-count label {
+.children-div-count {
   min-width: 180px;
 }
 
-.adult-span-count label {
+.adult-div-count {
   min-width: 226px;
 }
 
-.two-labels-paragraph input {
+.two-labels-div input {
   text-align: center;
-  padding-left: 27px;
-  padding-right: 27px;
 }
 
 .long-input {
   width: 346px;
 }
 
-.short-input {
-  width: 114px;
+.short-input,
+.sign-button {
+  width: 38px;
+}
+
+.two-labels-div input {
+  padding: 3px 3px 5px 3px;
+}
+
+.div-with-buttons-and-input {
+  display: flex;
 }
 
 .reason-section-text-div {
@@ -652,19 +660,25 @@ input[type=number] {
   border: none;
 }
 
+.sign-button svg {
+  fill: var(--grey2);
+}
+
 .sort-section__arrow-link svg,
 .button-icon svg {
   fill: var(--grey3);
 }
 
 .sort-section__arrow-link:hover svg,
-.button-icon:hover svg {
+.button-icon:hover svg,
+.sign-button:hover svg {
   fill: var(--basic-black);
 }
 
 .sort-section__arrow-link:active svg,
 .sort-section__arrow-link_active svg,
-.button-icon:active svg {
+.button-icon:active svg,
+.sign-button:active svg {
   fill: var(--basic-blue);
 }
 
@@ -901,13 +915,8 @@ input[type=number] {
 }
 
 .button-icon {
-  background-color: transparent;
   position: absolute;
   right: 14px;
-}
-
-.button-decrease {
-  right: 89px;
 }
 
 .button-calendar {

@@ -13,7 +13,7 @@ if (openButton && searchForm) {
       evt.preventDefault();
       let dateIn = document.querySelector(".date-in-input").value;
       let dateOut = document.querySelector(".date-out-input").value;
-      let adultCount = document.querySelector(".adult-span-count input").value;
+      let adultCount = document.querySelector(".adult-div-count input").value;
       if (!(dateIn && dateOut && adultCount)) {
         searchForm.classList.remove("modal-error");
         searchForm.offsetWidth = searchForm.offsetWidth;

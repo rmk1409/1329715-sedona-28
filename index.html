@@ -131,42 +131,42 @@
               </svg>
             </button>
           </p>
-          <p class="two-labels-paragraph">
-          <span class="adult-span-count">
-          <button type="button" class="button button-icon button-decrease" aria-label="уменьшить">
-            <svg width="12" height="3" viewBox="0 0 12 3" fill="black" xmlns="http://www.w3.org/2000/svg">
-              <rect width="12" height="3"/>
-            </svg>
-          </button>
-          <label>
-            Взрослые:
-            <input type="text" placeholder="2" class="short-input">
-          </label>
-          <button type="button" class="button button-icon" aria-label="увеличить">
-            <svg width="11" height="11" viewBox="0 0 11 11" fill="black" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
-            </svg>
-          </button>
-          </span>
-            <span class="children-span-count">
-          <button type="button" class="button button-icon button-decrease" aria-label="уменьшить">
-            <svg width="12" height="3" viewBox="0 0 12 3" fill="black" xmlns="http://www.w3.org/2000/svg">
-              <rect width="12" height="3"/>
-            </svg>
-          </button>
-          <label>
-            Дети:
-            <input type="text" placeholder="0" class="short-input">
-          </label>
-          <button type="button" class="button button-icon" aria-label="увеличить">
-            <svg width="11" height="11" viewBox="0 0 11 11" fill="black" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
-            </svg>
-          </button>
-          </span>
-          </p>
+          <div class="two-labels-div">
+            <div class="adult-div-count">
+              <label for="adult-count-input">Взрослые:</label>
+              <div class="div-with-buttons-and-input">
+                <button type="button" class="button sign-button" aria-label="уменьшить">
+                  <svg width="12" height="3" viewBox="0 0 12 3" fill="black" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="12" height="3"/>
+                  </svg>
+                </button>
+                <input type="text" placeholder="2" class="short-input" id="adult-count-input">
+                <button type="button" class="button sign-button" aria-label="увеличить">
+                  <svg width="11" height="11" viewBox="0 0 11 11" fill="black" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="children-div-count">
+              <label for="children-count-input">Дети:</label>
+              <div class="div-with-buttons-and-input">
+                <button type="button" class="button sign-button" aria-label="уменьшить">
+                  <svg width="12" height="3" viewBox="0 0 12 3" fill="black" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="12" height="3"/>
+                  </svg>
+                </button>
+                <input type="text" placeholder="0" class="short-input" id="children-count-input">
+                <button type="button" class="button sign-button" aria-label="увеличить">
+                  <svg width="11" height="11" viewBox="0 0 11 11" fill="black" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
           <button type="submit" title="Найти" class="button search-button">Найти</button>
         </form>
       </section>
@@ -223,6 +223,6 @@
     </section>
   </footer>
 </div>
-<script src="js/script.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
