@@ -534,11 +534,6 @@ input[type=number] {
   padding: 45px 69px 54px;
 }
 
-.map-link {
-  position: relative;
-  left: -13px;
-}
-
 .reason-section-text-div p,
 .option-section p {
   margin-top: 27px;
@@ -679,24 +674,41 @@ input[type=number] {
 }
 
 .main-nav {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: -15px;
-  padding: 0 5px;
+  margin-bottom: -21px;
+  padding-left: 73px;
+  padding-right: 71px;
+}
+
+.main-nav_catalog {
+  margin-bottom: -23px;
+}
+
+.main-nav li {
+  width: 228px;
+  padding-top: 14px;
+}
+
+.main-nav li:nth-child(3) {
+  width: 138px;
+  margin-left: 2px;
+  margin-right: 4px;
+  padding-top: 0;
+}
+
+.main-nav__left-link {
+  text-align: left;
+}
+
+.main-nav__right-link {
+  text-align: right;
 }
 
 .main-nav .logo {
-  z-index: 1;
-  display: inline-block;
   position: relative;
-  width: 138px;
-  height: 70px;
-  padding: 0;
+  z-index: 1;
 }
 
 .main-nav a {
-  display: block;
-  padding: 14px 67px;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
@@ -709,11 +721,6 @@ input[type=number] {
 .main-nav ul {
   display: flex;
   flex-wrap: wrap;
-  width: 526px;
-}
-
-.main-nav ul:last-child {
-  justify-content: flex-end;
 }
 
 .main-footer {
