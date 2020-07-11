@@ -417,17 +417,12 @@ input[type=number] {
   outline: none;
 }
 
-.div-for-search-form {
-  position: relative;
-}
-
 .search-form {
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   background-color: var(--basic-white);
   position: absolute;
   width: 568px;
   padding: 24px 55px 55px;
-  top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
@@ -587,6 +582,8 @@ input[type=number] {
   margin-top: 45px;
   padding: 30px 139px;
   width: 568px;
+  position: relative;
+  z-index: 6;
 }
 
 .open-search-form-button,
@@ -975,63 +972,14 @@ input[type=number] {
   fill: var(--grey4);
 }
 
-@-webkit-keyframes show {
-  0% {
-    padding: 0;
-  }
-  10% {
-    height: 10%;
-  }
-  50% {
-    height: 50%;
-  }
-  90% {
-    height: 90%;
-    padding-bottom: 0;
-    padding-top: 0;
-  }
-  100% {
-    padding: 24px 55px 55px;
-    height: 100%;
-  }
-}
-
 @keyframes show {
   0% {
-    padding: 0;
-  }
-  10% {
-    height: 10%;
-  }
-  50% {
-    height: 50%;
-  }
-  90% {
-    height: 90%;
-    padding-bottom: 0;
-    padding-top: 0;
+    transform: translate(-50%, -86px);
+    padding: 0 55px;
   }
   100% {
+    transform: translate(-50%, 0);
     padding: 24px 55px 55px;
-    height: 100%;
-  }
-}
-
-@-webkit-keyframes error {
-  10%, 90% {
-    transform: translate(-48%, -50%);
-  }
-
-  20%, 80% {
-    transform: translate(-52%, -50%);
-  }
-
-  30%, 50%, 70% {
-    transform: translate(-49%, -50%);
-  }
-
-  40%, 60% {
-    transform: translate(-51%, -50%);
   }
 }
 
