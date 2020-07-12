@@ -3,6 +3,8 @@ let searchForm = document.querySelector(".search-form");
 let searchButton = document.querySelector(".search-button");
 
 if (openButton && searchForm) {
+  searchForm.classList.toggle("modal-show");
+
   openButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     searchForm.classList.toggle("modal-show");

@@ -916,6 +916,7 @@ input[type=number] {
 .button-calendar {
   right: 9px;
   top: 7px;
+  background-color: transparent;
 }
 
 .search-button {
