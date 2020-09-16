@@ -1,5 +1,7 @@
 # Личный проект «Седона»
 
+There is a link to the [website](https://rmk1409.github.io/1329715-sedona-28/).
+
 * Студент: [R P](https://up.htmlacademy.ru/htmlcss/28/user/1329715).
 * Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
